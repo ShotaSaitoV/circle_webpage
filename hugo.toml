@@ -1,4 +1,23 @@
-baseURL = 'https://shotasaitov.github.io/circle_webpage/'
-locale = 'ja'
-title = '電脳猫太朗'
+baseURL = "https://shotasaitov.github.io/circle_webpage/"
+languageCode = "ja"
+title = "電脳猫太朗"
 theme = "hugo.386"
+paginate = 10  # 1ページに表示する記事数
+
+
+# --- グローバルメニューの設定 ---
+# 画面上部のナビゲーションバーに表示されます
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "投稿記事"
+  url = "/post/"   # 記事一覧
+  weight = 20
+
+[[menu.main]]
+  name = "電脳猫太朗とは"
+  url = "/about/"  # サークル紹介ページなど
+  weight = 30
