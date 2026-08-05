@@ -14,11 +14,6 @@ paginate = 10  # 1ページに表示する記事数
     # ウェブサイトの説明。ホームページに表示されます
     mainpagedesc = "同人サークル　電脳猫太朗（でんのうねこたろう）のWebサイトです"
 
-    # フッターの著作権セクションに表示する名前
-    # copyrightname = "JM Fergeau"
-
-    # 著作権名にリンクさせるURL。空欄にするとリンクなしになります。
-    # copyrighturl = "http://jmf-portfolio.netlify.com"
 
     # 「built on Hugo」の表示を表示します
     showhugo = true
@@ -33,16 +28,10 @@ paginate = 10  # 1ページに表示する記事数
     loadonepass = false
 
 [params.copyright]
-    # name = "JM Fergeau"
-
-    # 著作権名にリンクさせるURL。空欄にするとリンクなしになります。
-    # url = "http://jmf-portfolio.netlify.com"
 
     # 著作権情報の前に表示するテキスト
-    prefix = "[hugo.386テーマ by Max le Fou](https://gitlab.com/maxlefou/hugo.386)"
+    prefix = "[hugo.386 theme by Max le Fou](https://gitlab.com/maxlefou/hugo.386)"
 
-    # 著作権情報と Hugo の免責事項の間に表示するテキスト
-    suffix = "電脳猫太朗"
 
 [menu]
   # ナビゲーションバーに表示するボタンからコンテンツへアクセスできるようにします
