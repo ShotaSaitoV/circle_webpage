@@ -1,3 +1,4 @@
 baseURL = 'https://shotasaitov.github.io/circle_webpage/'
 locale = 'ja'
-title = 'My New Hugo Project'
+title = '電脳猫太朗'
+theme = "hugo.386"
