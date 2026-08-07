@@ -1,5 +1,5 @@
 baseURL = "https://shotasaitov.github.io/circle_webpage/"
-languageCode = "ja"
+locale = "ja"
 title = "電脳猫太朗"
 theme = "hugo.386"
 paginate = 10  # 1ページに表示する記事数
@@ -44,7 +44,7 @@ paginate = 10  # 1ページに表示する記事数
   [[menu.main]]
     identifier = "posts"
     name = "posts"
-    url = "/post/"       # パスはコンテンツフォルダにもなります
+    url = "content/posts/"       # パスはコンテンツフォルダにもなります
     weight = 20
 
 [taxonomies]
