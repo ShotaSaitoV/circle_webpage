@@ -54,4 +54,3 @@ enableGitInfo = true
           name = "記事一覧"
           url = "/posts"
           weight=10
-
