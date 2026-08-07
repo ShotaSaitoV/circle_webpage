@@ -1,52 +1,57 @@
-baseURL = "https://shotasaitov.github.io/circle_webpage/"
+baseurl = "https://shotasaitov.github.io/circle_webpage/"
 locale = "ja"
-title = "電脳猫太朗"
-theme = "hugo.386"
-paginate = 10  # 1ページに表示する記事数
+canonifyURLs = true
+theme = "terminal"
+pagination.pagerSize = 5
+enableGitInfo = true
 
+# Required for Chroma and the custom syntax highlighting.
+[markup.highlight]
+  noClasses = false
+[markup.goldmark.renderer]
+  unsafe = true
 [params]
-    # ホームページのメインタイトルとして表示する名前
-    mainpagetitle = "DennoNekotaro"
+  contentTypeName = "posts"
+  showMenuItems = 5
+  showLanguageSelector = false
+  fullWidthTheme = true
+  centerTheme = false
+  autoCover = true
+  showLastUpdated = true
+  dateFormat = "2006年01月02日 3:04:06 PM MST"
 
-    # ホームページのタイトルの下に表示するサブタイトル
-    mainpagesubtitle = "サークルのページへようこそ！"
+[params.twitter]
+  creator = ""
+  site = ""
 
-    # ウェブサイトの説明。ホームページに表示されます
-    mainpagedesc = "同人サークル　電脳猫太朗（でんのうねこたろう）のWebサイトです"
+[languages]
+  [languages.ja]
+    label = "日本語"
+    title = "ねこてっく"
 
+    [languages.ja.params]
+      subtitle = ""
+      owner = ""
+      keywords = ""
+      copyright = ""
+      menuMore = "もっと見る"
+      readMore = "続きを読む"
+      readOtherPosts = "他のポストを読む"
+      newerPosts = "新しい記事"
+      olderPosts = "古い記事"
+      missingContentMessage = "ページがありません"
+      missingBackButtonLabel = "ホームに戻る"
+      minuteReadingTime = "分で読了"
+      words = "文字"
 
-    # 「built on Hugo」の表示を表示します
-    showhugo = true
+      [languages.ja.params.logo]
+        logoText = "DennoNekotaro"
+        logoHomeLink = "/circle_webpage/"
 
-    # ローディングアニメーションを有効・無効にします。falseで有効化されます。既定値はfalseです。
-    loadfastload = false
+      [languages.ja.menu]
+        [[languages.ja.menu.main]]
+          identifier = "posts"
+          name = "記事一覧"
+          url = "/posts"
+          weight=10
 
-    # ページ読み込み効果の速度を設定します。既定値は1.0です。
-    loadspeedfactor = 1.0
-
-    # 2つ目の飛行カーソルを有効にします。既定値はfalseです。
-    loadonepass = false
-
-[params.copyright]
-
-    # 著作権情報の前に表示するテキスト
-    prefix = "[hugo.386 theme by Max le Fou](https://gitlab.com/maxlefou/hugo.386)"
-
-
-[menu]
-  # ナビゲーションバーに表示するボタンからコンテンツへアクセスできるようにします
-  [[menu.main]]
-    identifier = "about" # ボタンの一意の識別子
-    name = "about"       # ナビゲーションバーに表示する表示名
-    url = "/about/"      # パスは単一ページだけでなく、コンテンツフォルダにもなります
-    weight = 10          # ナビゲーションバーのボタンの並び順を決める番号
-
-  [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    url = "content/posts/"       # パスはコンテンツフォルダにもなります
-    weight = 20
-
-[taxonomies]
-category = "categories"
-tag = "tags"
